@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Change the direction to column */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-image: url(bg-image.svg);
+    background-size: cover;
+    position: relative;
+}
+
+/* Positioning header on the left */
+header {
+    position: absolute;
+    top: 50px;  /* Adjust the distance from the top */
+    left: 50px; /* Adjust the distance from the left */
+}
+
+/* Container Styling */ 
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 100px;
+} 
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.top {
+    margin-bottom: 40px; /* Adds some space below the heading/paragraph section */
+    text-align: center;
+    max-width: 700px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+}
+
+/* Adjust heading size */
+.top h1 {
+    font-size: 4rem; 
+    margin-bottom: 10px;
+}
+
+/* Adjust paragraph size */
+.top p {
+    font-size: 2rem; 
+}
+
+/* Form Container Styling */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Row for Two-Column Layout */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Label Styling */
+label {
+    text-align: left;
+    color: white;
+    font-size: 0.875rem;
+}
+
+/* Input Fields */
+.input-field,
+textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111729;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #CDD5E0;
+}
+
+/* Message Field */
+textarea {
+    height: 150px;
+    resize: none;
+    color: #111729;
+}
+
+.message-field{
+    color: #111729;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    color: #4036A9;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1.25;
+}
+
+.submit-btn:hover {
+    background: #0000E0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .input-row {
+        flex-direction: column;
+    }
+}
